@@ -1,0 +1,586 @@
+/**** GENERAL STYLES ****/
+
+html {
+    scroll-behavior: smooth;
+    /* Évite que le menu fixe cache le titre des sections ciblées par les ancres */
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: "Heebo", sans-serif;
+    margin: 0;
+    color: #21243d;
+}
+
+img {
+    max-width: 100%;
+}
+
+.text-en {
+    display: none;
+}
+
+/***** EN-TÊTE / NAVIGATION (fixe au défilement) *****/
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #ffffff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.logo img {
+    display: block;
+}
+
+#nav-links {
+    display: flex;
+    gap: 65px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+    color: #ff6464;
+}
+
+/**** PRÉSENTATION (HERO) ****/
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin: 60px auto 75px;
+}
+
+#header-content {
+    width: 630px;
+}
+
+.photo-profil {
+    margin-top: 15px;
+    flex-shrink: 0;
+    margin-right: 25px;
+}
+
+.photo-profil img {
+    display: block;
+    width: 243px;
+    height: 243px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+#button-cv {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #ff6464;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#button-cv:hover,
+#button-cv:focus-visible {
+    background-color: #e04f4f;
+}
+
+#subtitle {
+    font-size: 16px;
+    margin: 35px 0;
+}
+
+/*** BLOG ****/
+
+/* Le fond bleu clair occupe toute la largeur de l'écran, comme sur la maquette */
+#blog {
+    background-color: #edf7fa;
+}
+
+#blog-content {
+    max-width: 1200px;
+    padding: 20px 20px 35px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+#blog-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-all {
+    color: #00a8cc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#articles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-blog {
+    width: 543px;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    max-width: 48%;
+}
+
+.article-title {
+    font-size: 26px;
+    max-width: 370px;
+}
+
+.date-categorie {
+    display: flex;
+    font-size: 18px;
+    gap: 25px;
+}
+
+.article-description {
+    font-size: 16px;
+}
+
+/*** PORTFOLIO ****/
+
+#projets {
+    margin: auto;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+/* Ligne de séparation entre les projets, comme sur la maquette */
+.projet {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.projet > div:first-child {
+    flex: 0 0 246px;
+}
+
+.projet-image {
+    display: block;
+    width: 246px;
+    height: auto;
+}
+
+.projet-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+.date-type {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.projet-date {
+    background-color: #142850;
+    color: #ffffff;
+    font-weight: 900;
+    border-radius: 16px;
+    font-size: 18px;
+    width: 62px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.projet-type {
+    font-size: 20px;
+    color: #8695a4;
+}
+
+.projet-description {
+    font-size: 16px;
+}
+
+/***** CONTACT *****/
+
+#contact {
+    margin: auto;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+#contact > h2 {
+    margin-bottom: 60px;
+}
+
+#contact-content {
+    display: flex;
+    gap: 40px;
+}
+
+#coordonnees {
+    flex: 1;
+}
+
+.contact-title {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+#contact-intro {
+    font-size: 20px;
+}
+
+#contact-email {
+    font-size: 16px;
+}
+
+#contact-email a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.socials-link {
+    color: #000000;
+    font-size: 16px;
+}
+
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 14px;
+}
+
+input,
+select,
+textarea {
+    background-color: #f7f7f7;
+    border: none;
+    height: 46px;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+textarea#message {
+    height: 165px;
+    padding: 10px;
+}
+
+button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    height: 56px;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/***** PIED DE PAGE *****/
+
+footer {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+#icons-socials {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+#copyright {
+    font-size: 14px;
+    color: #212430;
+}
+
+/* Hamburger masqué sur ordinateur */
+.menu-hamburger {
+    display: none;
+}
+
+/***** RESPONSIVE : TABLETTES (701px à 1024px) *****/
+
+@media (min-width: 701px) and (max-width: 1024px) {
+
+    #nav-links {
+        gap: 35px;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    .hero {
+        align-items: center;
+        gap: 30px;
+        margin: 40px auto 50px;
+    }
+
+    #header-content {
+        width: auto;
+        flex: 1;
+    }
+
+    .photo-profil {
+        margin: 0;
+    }
+
+    .photo-profil img {
+        width: 200px;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .article-title {
+        font-size: 22px;
+    }
+
+    .projet {
+        gap: 30px;
+    }
+
+    .projet > div:first-child {
+        flex: 0 0 200px;
+    }
+
+    .projet-title {
+        font-size: 26px;
+    }
+
+    .contact-title {
+        font-size: 30px;
+    }
+}
+
+/***** RESPONSIVE : MOBILES (700px et moins) *****/
+
+@media (max-width: 700px) {
+
+    html {
+        scroll-padding-top: 70px;
+    }
+
+    /* Navigation mobile */
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .menu-hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 26px;
+        height: 20px;
+        padding: 0;
+        margin-left: auto;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .menu-hamburger span {
+        display: block;
+        width: 26px;
+        height: 2px;
+        background-color: #21243d;
+    }
+
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    #nav-links.is-open {
+        display: flex;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    /* Présentation */
+
+    .hero {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 25px;
+        margin: 20px auto 35px;
+    }
+
+    #header-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .photo-profil {
+        margin: 0;
+        align-self: center;
+    }
+
+    .photo-profil img {
+        width: 160px;
+        height: 160px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    #subtitle {
+        margin: 20px 0;
+    }
+
+    /* Articles récents */
+
+    #blog-content {
+        text-align: center;
+    }
+
+    #blog-heading {
+        justify-content: center;
+    }
+
+    .text-fr {
+        display: none;
+    }
+
+    .text-en {
+        display: inline;
+    }
+
+    .view-all {
+        display: none;
+    }
+
+    #articles {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .article-blog {
+        width: 100%;
+        max-width: none;
+        text-align: left;
+    }
+
+    .article-title {
+        font-size: 22px;
+        max-width: 100%;
+    }
+
+    /* Portfolio */
+
+    #projets > h2 {
+        text-align: center;
+    }
+
+    .projet {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 35px;
+    }
+
+    .projet > div:first-child {
+        flex: none;
+        width: 100%;
+    }
+
+    .projet-image {
+        width: 100%;
+    }
+
+    .projet-title {
+        font-size: 24px;
+    }
+
+    /* Contact : la maquette mobile n'affiche que le formulaire */
+
+    #contact > h2 {
+        margin-bottom: 35px;
+    }
+
+    #contact-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    #coordonnees {
+        display: none;
+    }
+
+    form {
+        width: 100%;
+        min-width: 0;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Pied de page */
+
+    footer {
+        padding-top: 50px;
+    }
+
+    #icons-socials {
+        gap: 20px;
+    }
+}
